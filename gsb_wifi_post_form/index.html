@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="./bootstrap.css">
+        <script src="./bootstrap.js"></script>
+        <style>
+            .btn-group{
+                justify-content: end;
+                align-items: end;
+                display: flex;
+                margin-top: 40vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-sm  my-5">
+            <div>
+                <h1 class="h1">GSB Wifi action Login form</h1><hr/>
+            </div>
+            <form name="form" action="https://wifi.gsb.gov.tr/j_spring_security_check" method="POST" class="form-container">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">T.C. Kimlik Numaranız</label>
+                    <input required class="form-control" autocomplete="off" type="text" name="j_username" value="" placeholder="11 haneli T.C. kimlik numaranız" aria-describedby="idhelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Şifren</label>
+                    <input required class="form-control" autocomplete="off" type="password" name="j_password">
+                </div>
+                <div class="btn-group">
+                    <button type="reset"  class="btn bg-danger">Temizle</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
